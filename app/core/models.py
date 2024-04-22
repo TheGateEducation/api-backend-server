@@ -36,8 +36,8 @@ class User(AbstractBaseUser, PermissionsMixin):
     phone_number = models.CharField(max_length=12)
     
     career = models.CharField(max_length=40)
-    visa_status = models.TextField()
-    application_status = models.TextField()
+    visa_status = models.TextField() #TODO: implementar un enum (opciones)
+    application_status = models.TextField() #TODO: implementar un enum (opciones)
     
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
