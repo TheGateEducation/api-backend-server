@@ -53,7 +53,7 @@ This docker-compose file facilitates the deployment of a Django application with
 ## URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
-    [Django URL documentation](https://docs.djangoproject.com/en/4.0/topics/http/urls/)
+    [Django URL documentation](https://github.com/TheGateEducation/api-backend-server/blob/development/app/app/urls.py)
 
 Examples:
 Function views

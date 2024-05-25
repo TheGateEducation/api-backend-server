@@ -14,6 +14,7 @@ class CreateUserView(generics.CreateAPIView):
 class ManageUserView(generics.RetrieveUpdateAPIView, generics.DestroyAPIView):
     """Manage the authenticated user"""
     serializer_class = UserSerializer
+    #TODO:GENERICS.RETRIVEGETAPIView()
     permission_classes = [permissions.IsAuthenticated]
 
     def get_object(self):
