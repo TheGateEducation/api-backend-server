@@ -8,10 +8,6 @@ class StudentRecordViewSet(viewsets.ModelViewSet):
     serializer_class = StudentRecordSerializer
     queryset = StudentRecord.objects.all()
 
-    def get_queryset(self):
-        """Retrieve the student records for the authenticated user."""
-        return self.queryset
-
     def perform_create(self, serializer):
         """Create a new student record."""
         serializer.save()
