@@ -7,7 +7,6 @@ class StudentRecordViewSet(viewsets.ModelViewSet):
     """Manage student records in the database."""
     serializer_class = StudentRecordSerializer
     queryset = StudentRecord.objects.all()
-    permission_classes = [permissions.IsAuthenticated]
 
     def get_queryset(self):
         """Retrieve the student records for the authenticated user."""
